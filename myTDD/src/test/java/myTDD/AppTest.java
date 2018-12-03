@@ -1,8 +1,9 @@
 package myTDD;
 
-import junit.framework.Test;
+// import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
@@ -23,7 +24,7 @@ public class AppTest
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
+    public static TestSuite suite()
     {
         return new TestSuite( AppTest.class );
     }
@@ -31,8 +32,11 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
+    @Test
     public void testApp()
     {
-        assertTrue( true );
+        // assertTrue( true );
+        App app = new App();
+        fail("TODO");
     }
 }
